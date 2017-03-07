@@ -10,10 +10,10 @@
 			<div class="form-group">
 			    <input type="text" class="form-control" placeholder="Search" id="searchBox">
 			</div>
-			<div type="submit" class="btn btn-default" disabled="disabled"><span class="glyphicon glyphicon-search"></span></div>
+			<div type="submit" class="btn btn-default" id="searchBtn"><span class="glyphicon glyphicon-search"></span></div>
 			
 			<div class="form-group pull-right col-md-4 col-sm-6" >
-				<label class="text-muted">Sort by priority :</label>
+				<label class="text-muted">Filter by priority :</label>
 				<select class="form-control" name="priority" id="selectSort">
 				  <option>--</option>
 				  <option>Low</option>

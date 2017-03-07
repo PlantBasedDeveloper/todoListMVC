@@ -126,9 +126,13 @@ $('#prevArr').click(function(){
 * on change listener for the search box to load the todos containing the given key
 */
 $("#searchBox").on("change", function() {
-	if($(this).val().length > 0){
-	   $.get('http://todoList/home/search/'+$(this).val(), {} , function(data){
-			$('#tableContainer').html(data);
-		});
-   }
+   $.get('http://todoList/home/search/'+$(this).val(), {} , function(data){
+		$('#tableContainer').html(data);
+	});
+});
+
+$("#searchBtn").on("click", function() {
+   $.get('http://todoList/home/search/'+$(this).val(), {} , function(data){
+		$('#tableContainer').html(data);
+	});
 });

@@ -2,10 +2,12 @@
 
 A small web application to help you manage your life.
 
+
+
 ## TECH
 
 Webserver : Apache (xampp)
-scripting : PHP
+backend : PHP 5.5
 database : phpMyAdmin ( MySQL )
 frontend : jQuery , bootstrap
 
@@ -30,6 +32,7 @@ frontend : jQuery , bootstrap
     ServerName todolist
 </VirtualHost>
 
+to map http://todolist/ as virtual host.
 
 5) open the hosts file in C:\Windows\System32\drivers\etc notepad ( as admin ) with notepad and add this line :
 
@@ -37,3 +40,12 @@ frontend : jQuery , bootstrap
 
 6) restart Apache and MySQL in xampp Control.
 
+## ERROR ?
+
+1) Fatal error: Call to undefined function mysql_connect() in C:\xampp\htdocs\todoListMVC\app\database.php on line 12
+
+add "extension=php_mysql.dll" to your php.ini file
+
+=> pdo is taking over mysql so we have to specify in the php.ini that we are using mysql.
+
+## ABOUT : Mohamed Amine Allani _ email : amine.allani94@gmail.com
